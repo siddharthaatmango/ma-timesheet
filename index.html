@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mango Timesheet</title>
+  <link rel="stylesheet" href="./vendor/photon/css/photon.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+    <header class="toolbar toolbar-header">
+        <h1 class="title">My Pending Tasks</h1>
+      
+        <div class="toolbar-actions">
+            <button class="btn btn-default btn-large pull-right" id="taskListRefreshBtn">
+                <span class="icon icon-text icon-arrows-ccw"></span>
+                Reload
+              </button>
+        </div>
+      </header>
+      
+      <ul class="list-group" style="height: 100%; overflow: scroll;" id="taskListUl">
+      </ul>
+      
+
+  <!-- Scripts -->
+  <script>
+    window.$ = window.jQuery = require('./js/jquery.min.js');
+  </script>
+  <script>require('./js/script.js');</script>
+</body>
+
+</html>
